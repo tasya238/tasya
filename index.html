@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Tasya | Akuntansi dan Keuangan</title>
+    <!-- Memuat Tailwind CSS untuk styling modern dan responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Menggunakan font Inter dan mendefinisikan skema warna pink/fuchsia -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fce7f6; /* Latar belakang pink sangat muda */
+            color: #1a202c;
+        }
+        /* Definisi Warna Primer (Fuchsia/Pink) */
+        .text-accent {
+            color: #db2777; /* Fuchsia 600 */
+        }
+        .bg-accent {
+            background-color: #db2777; /* Fuchsia 600 */
+        }
+        .hover\:bg-accent-dark:hover {
+            background-color: #be185d; /* Fuchsia 700 */
+        }
+        .border-accent {
+            border-color: #db2777;
+        }
+    </style>
+</head>
+<body class="min-h-screen antialiased">
+
+    <!-- Header & Navigasi -->
+    <header class="bg-white shadow-lg sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-accent">
+                Tasya
+            </h1>
+            <nav class="hidden md:flex space-x-6 text-gray-600 font-medium">
+                <a href="#beranda" class="hover:text-accent transition duration-300">Beranda</a>
+                <a href="#tentang" class="hover:text-accent transition duration-300">Tentang</a>
+                <a href="#keahlian" class="hover:text-accent transition duration-300">Keahlian</a>
+                <a href="#proyek" class="hover:text-accent transition duration-300">Proyek</a>
+                <a href="#kontak" class="hover:text-accent transition duration-300">Kontak</a>
+            </nav>
+            <!-- Tombol Menu Mobile -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-accent focus:outline-none">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Menu Mobile (Tersembunyi) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pb-3">
+            <a href="#beranda" class="block py-2 text-sm text-gray-700 hover:bg-pink-50 rounded-md">Beranda</a>
+            <a href="#tentang" class="block py-2 text-sm text-gray-700 hover:bg-pink-50 rounded-md">Tentang</a>
+            <a href="#keahlian" class="block py-2 text-sm text-gray-700 hover:bg-pink-50 rounded-md">Keahlian</a>
+            <a href="#proyek" class="block py-2 text-sm text-gray-700 hover:bg-pink-50 rounded-md">Proyek</a>
+            <a href="#kontak" class="block py-2 text-sm text-gray-700 hover:bg-pink-50 rounded-md">Kontak</a>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-24">
+
+        <!-- Bagian Beranda/Hero -->
+        <section id="beranda" class="text-center pt-16 md:pt-28">
+            <div class="w-36 h-36 mx-auto bg-pink-300 rounded-full shadow-2xl mb-6 flex items-center justify-center text-white text-6xl font-extrabold border-4 border-white">
+                <!-- Placeholder Foto Profil -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.38 0 2.5 1.12 2.5 2.5S13.38 10 12 10 9.5 8.88 9.5 7.5 10.62 5 12 5zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08s5.97 1.09 6 3.08c-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+            </div>
+            <p class="text-lg text-gray-600 mb-2">Halo, saya</p>
+            <h2 class="text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                Tasya
+            </h2>
+            <p class="text-2xl text-accent font-bold mb-8">
+                Pelajar | Spesialis Data Keuangan & Administrasi AKL
+            </p>
+            <p class="max-w-3xl mx-auto text-gray-700 mb-10 text-lg">
+                Seorang pelajar SMK di jurusan Akuntansi dan Keuangan Lembaga (AKL) yang memiliki fokus kuat pada ketelitian data, penyusunan laporan keuangan, dan administrasi perpajakan. Siap mengaplikasikan ilmu akuntansi digital.
+            </p>
+            <a href="#proyek" class="inline-block px-10 py-4 bg-accent text-white text-xl font-semibold rounded-full shadow-xl hover:bg-accent-dark transition duration-300 transform hover:scale-105 tracking-wider">
+                Lihat Laporan & Proyek &rarr;
+            </a>
+        </section>
+
+        <!-- Bagian Tentang Saya -->
+        <section id="tentang" class="bg-white p-8 sm:p-16 rounded-3xl shadow-2xl">
+            <h3 class="text-4xl font-extrabold text-accent mb-8 text-center">Tentang Saya</h3>
+            <div class="grid md:grid-cols-2 gap-12 text-gray-700">
+                <div>
+                    <h4 class="text-2xl font-bold mb-4 border-b-2 border-pink-200 pb-2">Profil & Visi</h4>
+                    <p class="mb-4 leading-relaxed">
+                        Saya berstatus sebagai **Pelajar** di SMK Dewi Sartika, jurusan AKL. Saya menguasai siklus akuntansi penuh dan mahir dalam penggunaan aplikasi spreadsheet untuk analisis keuangan.
+                    </p>
+                    <p class="italic font-medium">
+                        "Saya percaya bahwa data yang akurat adalah fondasi dari setiap keputusan bisnis yang sukses. Detail adalah prioritas utama."
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-2xl font-bold mb-4 border-b-2 border-pink-200 pb-2">Riwayat Pendidikan</h4>
+                    <div class="space-y-6">
+                        <!-- Pendidikan SMK -->
+                        <div class="border-l-4 border-accent pl-4 rounded-md">
+                            <p class="font-extrabold text-gray-900 text-lg">SMK Dewi Sartika</p>
+                            <p class="text-base text-gray-800">Jurusan: **AKL (Akuntansi dan Keuangan Lembaga)**</p>
+                            <p class="text-sm italic text-gray-500">[Tahun Masuk] - [Tahun Lulus/Sekarang]</p>
+                            <p class="text-sm mt-1">Fokus utama: Siklus Akuntansi, Administrasi Perpajakan, Komputer Akuntansi.</p>
+                        </div>
+                        <!-- Pendidikan Sebelumnya (Opsional) -->
+                        <div class="border-l-4 border-gray-300 pl-4 rounded-md">
+                            <p class="font-extrabold text-gray-900 text-lg">[Nama Sekolah Sebelumnya]</p>
+                            <p class="text-sm italic text-gray-500">[Tahun Masuk] - [Tahun Lulus]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Keahlian -->
+        <section id="keahlian">
+            <h3 class="text-4xl font-extrabold text-accent mb-12 text-center">Keahlian Akuntansi & Keuangan</h3>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Kartu Keahlian 1: Spreadsheet -->
+                <div class="bg-white p-6 rounded-2xl shadow-xl text-center border-t-4 border-pink-500 hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-pink-600 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="3" y1="14" x2="21" y2="14"/><line x1="10" y1="3" x2="10" y2="21"/><line x1="14" y1="3" x2="14" y2="21"/></svg>
+                    <p class="font-bold text-lg text-gray-900">Spreadsheet & Analisis Data</p>
+                    <p class="text-sm text-gray-500 mt-1">Microsoft Excel, Google Sheets, Pivot Table, Rumus Lanjutan</p>
+                </div>
+                
+                <!-- Kartu Keahlian 2: Akuntansi Dasar -->
+                <div class="bg-white p-6 rounded-2xl shadow-xl text-center border-t-4 border-pink-500 hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-pink-600 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1V23M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    <p class="font-bold text-lg text-gray-900">Siklus Akuntansi</p>
+                    <p class="text-sm text-gray-500 mt-1">Jurnal Umum, Buku Besar, Neraca Saldo, Laporan Keuangan</p>
+                </div>
+
+                <!-- Kartu Keahlian 3: Aplikasi Akuntansi -->
+                <div class="bg-white p-6 rounded-2xl shadow-xl text-center border-t-4 border-pink-500 hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-pink-600 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
+                    <p class="font-bold text-lg text-gray-900">Software Akuntansi</p>
+                    <p class="text-sm text-gray-500 mt-1">MYOB, Zahir, Accurate (Familiaritas Dasar/Praktek Sekolah)</p>
+                </div>
+
+                <!-- Kartu Keahlian 4: Perpajakan -->
+                <div class="bg-white p-6 rounded-2xl shadow-xl text-center border-t-4 border-pink-500 hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-pink-600 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM12 16v-4"/></svg>
+                    <p class="font-bold text-lg text-gray-900">Administrasi Perpajakan</p>
+                    <p class="text-sm text-gray-500 mt-1">PPh Pasal 21, PPN, Pelaporan Pajak Sederhana</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Proyek -->
+        <section id="proyek">
+            <h3 class="text-4xl font-extrabold text-accent mb-12 text-center">Proyek & Laporan (AKL Portfolio)</h3>
+            <p class="text-center text-gray-600 mb-10">Berikut adalah contoh karya studi kasus yang menunjukkan kompetensi akuntansi dan keuangan saya.</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Kartu Proyek 1: Laporan Keuangan -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-pink-300 transition duration-500 transform hover:scale-105">
+                    <div class="h-48 bg-fuchsia-100 flex items-center justify-center text-fuchsia-600 text-xl font-bold p-4">
+                        
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-2 text-gray-900">Laporan Keuangan Perusahaan Dagang</h4>
+                        <p class="text-sm text-accent font-medium mb-3">#SiklusAkuntansi #Bookkeeping #MYOB</p>
+                        <p class="text-gray-700 mb-4">
+                            Penyelesaian siklus akuntansi lengkap (jurnal hingga laporan laba rugi dan neraca) untuk studi kasus perusahaan dagang, menggunakan MYOB.
+                        </p>
+                        <a href="#" class="text-accent font-semibold hover:text-fuchsia-800 transition duration-300 underline">Lihat Laporan Studi Kasus &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Kartu Proyek 2: Analisis Budgeting -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-pink-300 transition duration-500 transform hover:scale-105">
+                    <div class="h-48 bg-pink-100 flex items-center justify-center text-pink-600 text-xl font-bold p-4">
+                        
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-2 text-gray-900">Perancangan Anggaran Kas Sederhana</h4>
+                        <p class="text-sm text-accent font-medium mb-3">#Excel #Budgeting #Forecasting</p>
+                        <p class="text-gray-700 mb-4">
+                            Merancang anggaran kas mingguan/bulanan menggunakan fungsi Excel lanjutan untuk mengoptimalkan arus kas fiktif.
+                        </p>
+                        <a href="#" class="text-accent font-semibold hover:text-fuchsia-800 transition duration-300 underline">Lihat File Excel (Simulasi) &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Kartu Proyek 3: Perpajakan -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-pink-300 transition duration-500 transform hover:scale-105">
+                    <div class="h-48 bg-purple-100 flex items-center justify-center text-purple-600 text-xl font-bold p-4">
+                        
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-2 text-gray-900">Simulasi Penghitungan PPh Pasal 21</h4>
+                        <p class="text-sm text-accent font-medium mb-3">#Pajak #Administrasi #Formulir</p>
+                        <p class="text-gray-700 mb-4">
+                            Penyelesaian kasus penghitungan PPh Pasal 21 dan pengisian formulir pajak sederhana berdasarkan data karyawan.
+                        </p>
+                        <a href="#" class="text-accent font-semibold hover:text-fuchsia-800 transition duration-300 underline">Lihat Dokumen Praktek &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Bagian Kontak -->
+        <section id="kontak" class="bg-white p-8 sm:p-16 rounded-3xl shadow-2xl">
+            <h3 class="text-4xl font-extrabold text-accent mb-10 text-center">Mari Terhubung!</h3>
+            <div class="max-w-xl mx-auto space-y-6">
+                <p class="text-center text-gray-700 text-lg">
+                    Saya terbuka untuk peluang magang di bidang akuntansi, keuangan, atau administrasi. Mari berdiskusi tentang data dan ketelitian!
+                </p>
+
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <!-- Email -->
+                    <a href="mailto:tasya.emailanda@gmail.com" class="flex items-center justify-center p-4 bg-pink-50 text-gray-800 rounded-xl hover:bg-pink-200 transition duration-300 font-semibold border border-pink-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                        tasya.emailanda@gmail.com
+                    </a>
+                    <!-- LinkedIn (Sangat penting untuk AKL) -->
+                    <a href="https://linkedin.com/in/tasya-akl" target="_blank" class="flex items-center justify-center p-4 bg-pink-50 text-gray-800 rounded-xl hover:bg-pink-200 transition duration-300 font-semibold border border-pink-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 0-6 6v7h4v-7a2 2 0 0 1 2-2 2 2 0 0 1 2 2v7h4v-7a6 6 0 0 0-6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-16 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; <span id="current-year"></span> Tasya. Portofolio Akuntansi SMK Dewi Sartika.</p>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript untuk interaksi dan tahun -->
+    <script>
+        // Mengubah tahun di footer secara otomatis
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Logika untuk menu mobile
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Menutup menu mobile setelah klik link (UX improvement)
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
